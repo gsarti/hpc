@@ -1,0 +1,360 @@
+Node cn01-38
+
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           30196.6     0.042856     0.042389     0.043792
+Scale:          29421.9     0.043664     0.043505     0.043880
+Add:            34367.4     0.056231     0.055867     0.058665
+Triad:          34712.1     0.055712     0.055312     0.060525
+
+
+
+cn08-24
+-------------------------------------------------------------
+STREAM version $Revision: 5.10 $
+-------------------------------------------------------------
+This system uses 8 bytes per array element.
+-------------------------------------------------------------
+Array size = 80000000 (elements), Offset = 0 (elements)
+Memory per array = 610.4 MiB (= 0.6 GiB).
+Total memory required = 1831.1 MiB (= 1.8 GiB).
+Each kernel will be executed 50 times.
+ The *best* time for each kernel (excluding the first iteration)
+ will be used to compute the reported bandwidth.
+-------------------------------------------------------------
+Your clock granularity/precision appears to be 1 microseconds.
+Each test below will take on the order of 83621 microseconds.
+   (= 83621 clock ticks)
+Increase the size of the arrays if this shows that
+you are not getting at least 20 clock ticks per test.
+-------------------------------------------------------------
+WARNING -- The above is only a rough guideline.
+For best results, please be sure you know the
+precision of your system timer.
+-------------------------------------------------------------------------------
+
+
+------------------
+Run  with 1 thread(s)
+------------------
+**** CLOSE:
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           12906.9     0.099322     0.099172     0.099732
+Scale:          12670.8     0.101187     0.101020     0.101944
+Add:            13507.5     0.142353     0.142143     0.142682
+Triad:          13528.6     0.142126     0.141921     0.142475
+
+**** DISTANT:
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           10153.7     0.128191     0.126063     0.128856
+Scale:          10011.9     0.130622     0.127848     0.131153
+Add:            10121.6     0.194440     0.189693     0.195594
+Triad:           9929.5     0.194991     0.193364     0.195572
+
+****REVERSED CLOSE:
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           13113.5     0.097731     0.097609     0.098073
+Scale:          12898.0     0.099376     0.099240     0.100379
+Add:            13567.3     0.141687     0.141517     0.142292
+Triad:          13509.5     0.142254     0.142122     0.142530
+
+****REVERSED DISTANT:
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           10043.1     0.128549     0.127451     0.129032
+Scale:          10055.7     0.130295     0.127291     0.130598
+Add:             9944.6     0.195023     0.193069     0.195329
+Triad:           9790.4     0.196375     0.196110     0.196731
+
+
+------------------
+Run  with 2 thread(s)
+------------------
+**** CLOSE:
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           17481.3     0.073692     0.073221     0.074661
+Scale:          18200.1     0.070762     0.070329     0.071942
+Add:            19672.8     0.098216     0.097597     0.099743
+Triad:          19478.5     0.099192     0.098570     0.100758
+
+**** DISTANT:
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           16540.7     0.077665     0.077385     0.078068
+Scale:          15773.1     0.081534     0.081151     0.082370
+Add:            17224.7     0.111949     0.111468     0.112795
+Triad:          17202.8     0.112161     0.111610     0.112988
+
+****REVERSED CLOSE:
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           18718.6     0.069067     0.068381     0.069633
+Scale:          18680.1     0.069285     0.068522     0.069895
+Add:            20404.5     0.095044     0.094097     0.095799
+Triad:          20198.6     0.095994     0.095056     0.096752
+
+****REVERSED DISTANT:
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           15995.2     0.080371     0.080024     0.080698
+Scale:          15642.0     0.082137     0.081831     0.082414
+Add:            16803.8     0.114685     0.114260     0.115198
+Triad:          16710.3     0.115308     0.114899     0.115790
+
+
+------------------
+Run  with 3 thread(s)
+------------------
+Function    Best Rate MB/s  Avg time     Min time     Max time
+**** CLOSE:
+Copy:           19158.8     0.067035     0.066810     0.067402
+Scale:          18466.1     0.069530     0.069316     0.070859
+Add:            21461.2     0.089729     0.089464     0.090273
+Triad:          21204.0     0.090784     0.090549     0.091359
+
+**** DISTANT:
+Copy:           18796.4     0.068221     0.068098     0.068429
+Scale:          18476.0     0.069491     0.069279     0.069746
+Add:            20571.5     0.093560     0.093333     0.093955
+Triad:          20648.5     0.093269     0.092985     0.093851
+
+****REVERSED CLOSE:
+Copy:           20535.2     0.062495     0.062332     0.062986
+Scale:          19638.2     0.065345     0.065179     0.066219
+Add:            22890.1     0.084108     0.083879     0.084644
+Triad:          22474.6     0.085686     0.085430     0.086285
+
+****REVERSED DISTANT:
+Copy:           18701.4     0.068917     0.068444     0.069351
+Scale:          17412.6     0.073809     0.073510     0.074194
+Add:            20081.2     0.095912     0.095612     0.096375
+Triad:          19679.4     0.097876     0.097564     0.098893
+
+
+------------------
+Run  with 4 thread(s)
+------------------
+**** CLOSE:
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           19011.4     0.067433     0.067328     0.067579
+Scale:          18858.5     0.068063     0.067874     0.068369
+Add:            21681.0     0.088727     0.088557     0.088981
+Triad:          21411.1     0.089871     0.089673     0.090856
+
+**** DISTANT:
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           19598.8     0.066105     0.065310     0.067688
+Scale:          19228.1     0.067331     0.066569     0.067955
+Add:            21638.7     0.089786     0.088730     0.091120
+Triad:          21684.4     0.089637     0.088543     0.097690
+
+****REVERSED CLOSE:
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           19969.5     0.064584     0.064098     0.065504
+Scale:          19983.4     0.064573     0.064053     0.065524
+Add:            22907.3     0.084475     0.083816     0.085510
+Triad:          23251.0     0.083099     0.082577     0.084429
+
+****REVERSED DISTANT:
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           18240.4     0.070390     0.070174     0.071496
+Scale:          18240.1     0.070315     0.070175     0.070580
+Add:            20535.4     0.093668     0.093497     0.094300
+Triad:          20908.8     0.092039     0.091827     0.094325
+
+
+
+
+------------------
+Run  with 5 thread(s)
+------------------
+**** CLOSE:
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           19493.2     0.065877     0.065664     0.066685
+Scale:          18954.3     0.067770     0.067531     0.068780
+Add:            22078.6     0.087265     0.086962     0.088446
+Triad:          21330.2     0.090324     0.090013     0.091315
+
+**** DISTANT:
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           19578.8     0.065796     0.065377     0.066200
+Scale:          19671.7     0.065577     0.065068     0.065966
+Add:            21733.2     0.089013     0.088344     0.089603
+Triad:          21528.1     0.089845     0.089186     0.090884
+
+****REVERSED CLOSE:
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           19899.3     0.064887     0.064324     0.065905
+Scale:          19832.7     0.065080     0.064540     0.066082
+Add:            22927.5     0.084415     0.083742     0.085793
+Triad:          23501.5     0.082388     0.081697     0.083527
+
+****REVERSED DISTANT:
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           17980.8     0.071568     0.071187     0.071986
+Scale:          18511.0     0.069535     0.069148     0.070126
+Add:            20437.1     0.094437     0.093947     0.095187
+Triad:          20707.5     0.093258     0.092720     0.093996
+
+
+
+------------------
+Run  with 6 thread(s)
+------------------
+**** CLOSE:
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           19007.7     0.067455     0.067341     0.067596
+Scale:          18668.4     0.068729     0.068565     0.068904
+Add:            21744.3     0.088397     0.088299     0.088551
+Triad:          21681.9     0.088669     0.088553     0.088913
+
+**** DISTANT:
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           19311.4     0.066622     0.066282     0.066906
+Scale:          19525.9     0.065756     0.065554     0.066614
+Add:            21574.5     0.089289     0.088994     0.089766
+Triad:          22098.5     0.087202     0.086884     0.089690
+
+****REVERSED CLOSE:
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           20828.2     0.061561     0.061455     0.061790
+Scale:          19394.2     0.066185     0.065999     0.066332
+Add:            23450.1     0.081995     0.081876     0.082133
+Triad:          23525.6     0.081773     0.081613     0.081878
+
+****REVERSED DISTANT:
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           18265.1     0.070796     0.070079     0.071154
+Scale:          18860.1     0.068468     0.067868     0.068774
+Add:            20795.6     0.093317     0.092327     0.093879
+Triad:          20736.6     0.093332     0.092590     0.093826
+
+
+
+
+------------------
+Run  with 7 thread(s)
+------------------
+**** CLOSE:
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           18587.9     0.069145     0.068862     0.069358
+Scale:          18820.2     0.068159     0.068012     0.068424
+Add:            21401.3     0.089838     0.089714     0.090197
+Triad:          21429.7     0.089708     0.089595     0.089868
+
+**** DISTANT:
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           19688.4     0.065464     0.065013     0.065902
+Scale:          19729.3     0.065438     0.064878     0.065807
+Add:            21885.8     0.088289     0.087728     0.089236
+Triad:          22030.2     0.087643     0.087153     0.088130
+
+****REVERSED CLOSE:
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           19588.0     0.065442     0.065346     0.065575
+Scale:          20845.9     0.061592     0.061403     0.061774
+Add:            22918.0     0.083921     0.083777     0.084039
+Triad:          22955.2     0.083723     0.083641     0.083861
+
+****REVERSED DISTANT:
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           18182.3     0.071073     0.070398     0.071427
+Scale:          18085.2     0.071376     0.070776     0.071698
+Add:            20558.3     0.094154     0.093393     0.094535
+Triad:          20809.2     0.092930     0.092267     0.093180
+
+
+
+
+------------------
+Run  with 8 thread(s)
+------------------
+**** CLOSE:
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           18232.8     0.070299     0.070203     0.070415
+Scale:          18523.9     0.069212     0.069100     0.069303
+Add:            21143.0     0.090953     0.090810     0.091915
+Triad:          21678.7     0.088675     0.088566     0.088775
+
+**** DISTANT:
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           19700.2     0.065323     0.064974     0.065510
+Scale:          19764.4     0.065142     0.064763     0.065352
+Add:            22088.2     0.087519     0.086924     0.088133
+Triad:          21816.2     0.088458     0.088008     0.089523
+
+****REVERSED CLOSE:
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           20039.5     0.063995     0.063874     0.064131
+Scale:          20200.1     0.063474     0.063366     0.063585
+Add:            23175.5     0.082986     0.082846     0.083170
+Triad:          23274.7     0.082634     0.082493     0.082813
+
+****REVERSED DISTANT:
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           17803.5     0.072431     0.071896     0.072655
+Scale:          18103.1     0.071298     0.070706     0.071635
+Add:            20454.0     0.094524     0.093869     0.094789
+Triad:          20634.5     0.093700     0.093048     0.094248
+
+
+
+------------------
+Run  with 9 thread(s)
+------------------
+**** CLOSE:
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           18743.6     0.068392     0.068290     0.068507
+Scale:          18712.4     0.068534     0.068404     0.068790
+Add:            21506.4     0.089418     0.089276     0.089570
+Triad:          21405.7     0.089782     0.089696     0.089969
+
+**** DISTANT:
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           20453.9     0.063166     0.062580     0.063549
+Scale:          19849.3     0.065150     0.064486     0.065852
+Add:            22266.5     0.086907     0.086228     0.087132
+Triad:          21826.6     0.088678     0.087966     0.088898
+
+****REVERSED CLOSE:
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           20186.8     0.063504     0.063408     0.063657
+Scale:          20446.9     0.062736     0.062601     0.062872
+Add:            23240.6     0.082680     0.082614     0.082849
+Triad:          22792.0     0.084475     0.084240     0.084655
+
+****REVERSED DISTANT:
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           18120.8     0.071019     0.070637     0.071274
+Scale:          18029.7     0.071366     0.070994     0.071620
+Add:            20545.8     0.093917     0.093450     0.094269
+Triad:          20918.0     0.092276     0.091787     0.092642
+
+
+
+
+------------------
+Run  with 10 thread(s)
+------------------
+**** CLOSE:
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           18109.5     0.070942     0.070681     0.072940
+Scale:          19129.6     0.067236     0.066912     0.067352
+Add:            21229.8     0.090561     0.090439     0.091128
+Triad:          21402.3     0.089904     0.089710     0.091570
+
+**** DISTANT:
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           19700.5     0.065121     0.064973     0.065244
+Scale:          19578.2     0.065504     0.065379     0.065701
+Add:            21892.8     0.087834     0.087700     0.088134
+Triad:          22153.0     0.086806     0.086670     0.087204
+
+****REVERSED CLOSE:
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           19238.5     0.066688     0.066533     0.066990
+Scale:          21510.5     0.059618     0.059506     0.059786
+Add:            22890.9     0.083994     0.083876     0.084181
+Triad:          23051.8     0.083376     0.083291     0.083484
+
+****REVERSED DISTANT:
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           18787.0     0.068795     0.068132     0.069160
+Scale:          18419.9     0.070202     0.069490     0.070539
+Add:            21161.9     0.091654     0.090729     0.092162
+Triad:          20530.0     0.094347     0.093522     0.095079

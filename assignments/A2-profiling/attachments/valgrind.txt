@@ -1,0 +1,72 @@
+==6982== Memcheck, a memory error detector
+==6982== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==6982== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==6982== Command: ./dijkstra_omp
+==6982==
+OpenMP Results for Graph:
+Path to Vertex 0 is 0
+Path to Vertex 1 is 162
+Path to Vertex 2 is 168
+...
+Path to Vertex 997 is 258
+Path to Vertex 998 is 173
+Path to Vertex 999 is 209
+Running time: 39885.462309 ms
+==6982==
+==6982== HEAP SUMMARY:
+==6982==     in use at exit: 3,312 bytes in 7 blocks
+==6982==   total heap usage: 9 allocs, 2 frees, 37,152 bytes allocated
+==6982==
+==6982== LEAK SUMMARY:
+==6982==    definitely lost: 0 bytes in 0 blocks
+==6982==    indirectly lost: 0 bytes in 0 blocks
+==6982==      possibly lost: 864 bytes in 3 blocks
+==6982==    still reachable: 2,448 bytes in 4 blocks
+==6982==         suppressed: 0 bytes in 0 blocks
+==6982== Rerun with --leak-check=full to see details of leaked memory
+==6982==
+==6982== For counts of detected and suppressed errors, rerun with: -v
+==6982== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+
+
+
+
+==10715== Callgrind, a call-graph generating cache profiler
+==10715== Copyright (C) 2002-2017, and GNU GPL'd, by Josef Weidendorfer et al.
+==10715== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==10715== Command: ./dijkstra_omp
+==10715== 
+--10715-- warning: L3 cache found, using its data for the LL simulation.
+==10715== For interactive control, run 'callgrind_control -h'.
+OpenMP Results for Graph:
+Path to Vertex 0 is 0
+Path to Vertex 1 is 199
+Path to Vertex 2 is 170
+...
+Path to Vertex 998 is 217
+Path to Vertex 999 is 232
+Running time: 335441.631571 ms
+==10715== 
+==10715== Events    : Ir Dr Dw I1mr D1mr D1mw ILmr DLmr DLmw Bc Bcm Bi Bim
+==10715== Collected : 18108769410 7536647676 1510879269 1682 898481 29462 1582 2788 1627 3012867211 2752291 1044535 734
+==10715== 
+==10715== I   refs:      18,108,769,410
+==10715== I1  misses:             1,682
+==10715== LLi misses:             1,582
+==10715== I1  miss rate:           0.00%
+==10715== LLi miss rate:           0.00%
+==10715== 
+==10715== D   refs:       9,047,526,945  (7,536,647,676 rd + 1,510,879,269 wr)
+==10715== D1  misses:           927,943  (      898,481 rd +        29,462 wr)
+==10715== LLd misses:             4,415  (        2,788 rd +         1,627 wr)
+==10715== D1  miss rate:            0.0% (          0.0%   +           0.0%  )
+==10715== LLd miss rate:            0.0% (          0.0%   +           0.0%  )
+==10715== 
+==10715== LL refs:              929,625  (      900,163 rd +        29,462 wr)
+==10715== LL misses:              5,997  (        4,370 rd +         1,627 wr)
+==10715== LL miss rate:             0.0% (          0.0%   +           0.0%  )
+==10715== 
+==10715== Branches:       3,013,911,746  (3,012,867,211 cond +     1,044,535 ind)
+==10715== Mispredicts:        2,753,025  (    2,752,291 cond +           734 ind)
+==10715== Mispred rate:             0.1% (          0.1%     +           0.1%   )

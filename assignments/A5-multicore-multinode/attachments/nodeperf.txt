@@ -1,0 +1,37 @@
+# First line doesn't compile, is it intended?
+
+Multi-threaded MPI detected
+
+The time/date of the run...  at Wed Nov 28 22:11:34 2018
+
+This driver was compiled with:
+	-DITER=4 -DLINUX -DNOACCUR -DPREC=double 
+Segmentation fault (core dumped)
+
+# Changed mkl_malloc to malloc inside the code, why wasn't it working?
+
+# Executing mpicc -fopenmp -o3 nodeperf.c  -m64 -I${MKLROOT}/include -o nodeperf.x -L${MKLROOT}/lib/intel64
+# -Wl,--no-as-needed -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -lm -ldl
+
+Multi-threaded MPI detected
+
+The time/date of the run...  at Wed Nov 28 22:16:10 2018
+
+This driver was compiled with:
+	-DITER=4 -DLINUX -DNOACCUR -DPREC=double 
+Malloc done.  Used 1846080096 bytes
+(0 of 1): NN lda=15000 ldb= 192 ldc=15000 0 0 0 26986.257 cn08-17
+
+# mpiicc -O2 -xHost -qopenmp -mkl nodeperf.c -o nodeperf now is working, but still ignores -qopenmp argument (MPI Execution not available)
+# Changing it to -fopenmpi, now it uses MPI Execution
+
+Multi-threaded MPI detected
+
+The time/date of the run...  at Wed Nov 28 22:20:23 2018
+
+This driver was compiled with:
+	-DITER=4 -DLINUX -DNOACCUR -DPREC=double 
+Malloc done.  Used 1846080096 bytes
+(0 of 1): NN lda=15000 ldb= 192 ldc=15000 0 0 0 438456.082 cn08-17
+
+# Why is the result from first execution different from the one of the second execution?
